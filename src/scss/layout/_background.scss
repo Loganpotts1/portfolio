@@ -1,0 +1,20 @@
+.background {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 1200px) 1fr;
+    position: fixed;
+
+    &__wrap {
+        grid-column: 2 / 3;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__line {
+        display: inline-block;
+        width: 1px;
+        background-color: var(--color-black);
+    }
+}

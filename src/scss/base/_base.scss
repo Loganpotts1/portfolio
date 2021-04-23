@@ -1,0 +1,27 @@
+:root {
+    --color-black: #000;
+    --color-neutral-1: #1a1a1a;
+    --color-neutral-2: #1f1f1f;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+.delete-me {
+    height: 150rem;
+    width: 100%;
+}
