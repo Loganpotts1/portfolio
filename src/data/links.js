@@ -1,14 +1,14 @@
 export let links = [
     {
-        title: "LinkedIn",
-        url: ""
+        title: "EMAIL",
+        url: "mailto:pottld01@gmail.com"
     },
     {
-        title: "Github",
+        title: "GITHUB",
         url: "https://github.com/Loganpotts1"
     },
     {
-        title: "Email",
-        url: "mailto:pottld01@gmail.com"
+        title: "LINKEDIN",
+        url: "https://www.linkedin.com/in/logan-potts-3b3865133/"
     }
 ];

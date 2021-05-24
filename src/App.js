@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-// import './scss/main.min.css';
+import './scss/main.min.css';
 import { TimelineMax, Power3 } from "gsap";
 import Portfolio from "./layout/Portfolio";
 

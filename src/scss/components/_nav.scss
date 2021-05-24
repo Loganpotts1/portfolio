@@ -1,0 +1,31 @@
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 30px 60px;
+	z-index: 5;
+
+	&__links {
+		display: flex;
+		flex-flow: row nowrap;
+		column-gap: 20px;
+		align-items: flex-end;
+		height: 250px;
+		transform: rotate(-90deg);
+
+		li {
+			text-align: center;
+			width: min-content;
+
+			a {
+				font-size: 20px;
+				font-weight: 300;
+
+				&:hover {
+					color: var(--color-accent-2);
+					transition: all 0.2s;
+				}
+			}
+		}
+	}
+}

@@ -1,27 +1,81 @@
 :root {
-    --color-black: #000;
-    --color-neutral-1: #1a1a1a;
-    --color-neutral-2: #1f1f1f;
+	--color-black: #000;
+	--color-white: #fff;
+	--color-neutral-1: #1a1a1a;
+	--color-neutral-2: #1f1f1f;
+	--color-accent-1: #ff5252;
+	--color-accent-2: #0097a7;
+
+	--scrollbar-bg: #181819;
+	--scrollbar-fg: #727273;
 }
+
+$bp-larger: 1400px;
+$bp-large: 1200px;
+$bp-medium: 1000px;
+$bp-small: 800px;
+$bp-smaller: 600px;
+$bp-mobile: 400px;
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	@include scrollbar(var(--scrollbar-fg), var(--scrollbar-bg));
 }
 
 html {
-    font-size: 10px;
+	font-size: 10px;
+
+	@media screen and (max-width: $bp-larger) {
+		font-size: 9px;
+	}
+
+	@media screen and (max-width: $bp-large) {
+		font-size: 8px;
+	}
+
+	@media screen and (max-width: $bp-medium) {
+		font-size: 7px;
+	}
+
+	@media screen and (max-width: $bp-small) {
+		font-size: 6px;
+	}
+
+	@media screen and (max-width: $bp-smaller) {
+		font-size: 5px;
+	}
+
+	@media screen and (max-width: $bp-mobile) {
+		font-size: 4px;
+	}
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 1.6rem;
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	color: var(--color-white);
+	overflow-x: hidden;
+	@include scrollbar(var(--scrollbar-fg), var(--scrollbar-bg));
+}
+
+h2 {
+	font-size: 7.5rem;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: var(--color-white);
+	text-decoration: none;
 }
 
 .delete-me {
-    height: 150rem;
-    width: 100%;
+	height: 150rem;
+	width: 100%;
 }
